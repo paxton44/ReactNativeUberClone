@@ -27,6 +27,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Icon from 'react-native-vector-icons/AntDesign';
+
 
 
 const Section = ({children, title}): Node => {
@@ -75,9 +77,11 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Wu Tang">
+            <Icon name={'stepforward'}></Icon>
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
+          
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
